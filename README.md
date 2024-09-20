@@ -1,2 +1,1 @@
 # js-course
-js
