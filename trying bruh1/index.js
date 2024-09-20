@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 
 let markMass1 = 78;  
 let markHeight1 = 1.69;  
@@ -27,4 +27,24 @@ console.log("Does Mark have a higher BMI than John?", markHigherBMI1);
 console.log("\nTest Data 2:");
 console.log("Mark's BMI:", markBMI2.toFixed(2));
 console.log("John's BMI:", johnBMI2.toFixed(2));
-console.log("Does Mark have a higher BMI than John?", markHigherBMI2);
+console.log("Does Mark have a higher BMI than John?", markHigherBMI2);*/
+
+
+function calcTip(bill) {
+    if (bill >= 50 && bill <= 300) {
+      return bill * 0.15; 
+    } else {
+      return bill * 0.2;   
+    }
+  }
+  
+  let bills = [125, 555, 44];
+  
+  let tips = bills.map(calcTip);
+  
+  let total = bills.map((bill, index) => bill + tips[index]);
+  
+  console.log("Bills:", bills);
+  console.log("Tips:", tips);
+  console.log("Total:", total);
+  
