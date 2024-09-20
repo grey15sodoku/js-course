@@ -30,7 +30,7 @@ console.log("John's BMI:", johnBMI2.toFixed(2));
 console.log("Does Mark have a higher BMI than John?", markHigherBMI2);*/
 
 
-function calcTip(bill) {
+/*function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
       return bill * 0.15; 
     } else {
@@ -46,5 +46,5 @@ function calcTip(bill) {
   
   console.log("Bills:", bills);
   console.log("Tips:", tips);
-  console.log("Total:", total);
+  console.log("Total:", total);*/
   
