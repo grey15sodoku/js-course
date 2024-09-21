@@ -91,3 +91,12 @@ console.log('Average Total:', calcAverage(totals));*/
 }
 calcAge()
 console.log("age is " + calcAge(2004))*/
+
+
+/*for (let i = 0; i < 4; i++) {
+  console.log('Outer loop iteration: ' + i);
+  
+  for (let j = 0; j < 10; j++) {
+      console.log('  Inner loop iteration: ' + j);
+  }
+}*/
