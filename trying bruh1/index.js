@@ -30,7 +30,7 @@ console.log("John's BMI:", johnBMI2.toFixed(2));
 console.log("Does Mark have a higher BMI than John?", markHigherBMI2);*/
 
 
-function calcTip(bill) {
+/*function calcTip(bill) {
     if (bill >= 50 && bill <= 300) {
       return bill * 0.15; 
     } else {
@@ -46,5 +46,39 @@ function calcTip(bill) {
   
   console.log("Bills:", bills);
   console.log("Tips:", tips);
-  console.log("Total:", total);
-  
+  console.log("Total:", total);*/
+
+
+  // Step 1: Create an array 'bills' containing all 10 test bill values
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// Step 2: Create empty arrays for tips and totals
+const tips = [];
+const totals = [];
+
+// Step 3: Define the calcTip function
+const calcTip = (bill) => {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+// Use a for loop to calculate tips and totals
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);   // calculate tip
+    tips.push(tip);                  // add tip to the tips array
+    totals.push(bills[i] + tip);     // add total (bill + tip) to totals array
+}
+
+// Bonus: Function to calculate the average
+const calcAverage = (arr) => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];               // sum of all values in the array
+    }
+    return sum / arr.length;         // calculate average
+};
+
+// Output
+console.log('Bills:', bills);
+console.log('Tips:', tips);
+console.log('Totals:', totals);
+console.log('Average Total:', calcAverage(totals));
